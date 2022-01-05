@@ -40,7 +40,6 @@ jobs:
       
     - name: Pull data from DVC
       run: |
-        dvc remote add -d s3-bucket s3://udacity-p3-bucket
         dvc pull 
         
     - name: Lint with flake8
