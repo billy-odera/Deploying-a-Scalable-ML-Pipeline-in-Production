@@ -1,0 +1,4 @@
+outs:
+- md5: f459a4e88d3adc284aa4459cddae9bed
+  size: 814
+  path: education_slice_output.csv
