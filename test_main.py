@@ -10,8 +10,7 @@ def test_get():
 
     r = client.get("/")
     assert r.status_code == 200
-    assert r.json() == {"greeting": "Welcome to Udacity MLDevops Project 3: \
-                    Deploying a Machine Learning Model on Heroku with FastAPI"}
+    assert r.json() == {"greeting": "Welcome to Udacity MLDevops Project 3: Deploying a Machine Learning Model on Heroku with FastAPI"}
 
 def test_post_more_than_50():
     """
