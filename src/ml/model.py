@@ -94,7 +94,7 @@ def save_models(trained_model, encoder, lb, path="../model"):
         The location to save the models (default="../model")
     """
 
-    dump(trained_model,f"{path}/model.joblib")
+    dump(trained_model,f"{path}/trained_model.joblib")
     dump(encoder,f"{path}/encoder.joblib")
     dump(lb,f"{path}/lb.joblib")
 
@@ -118,7 +118,7 @@ def load_models(path="../model"):
         Trained LabelBinarizer
     """
 
-    trained_model = load(f"{path}/model.joblib")
+    trained_model = load(f"{path}/trained_model.joblib")
     encoder = load(f"{path}/encoder.joblib")
     lb = load(f"{path}/lb.joblib")
 
