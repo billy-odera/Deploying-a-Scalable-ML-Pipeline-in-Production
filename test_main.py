@@ -35,7 +35,7 @@ def test_post_more_than_50():
     assert r.status_code == 200
     assert r.json() == {"prediction": ">50K"}
 
-def test_post_less_than_50(client):
+def test_post_less_than_50():
     """
     Tests POST() for a inference output less than 50k.
     """
