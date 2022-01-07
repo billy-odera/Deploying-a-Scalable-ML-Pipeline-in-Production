@@ -1,4 +1,9 @@
+'''
+Script that uses the requests module to do one POST on the live API @ https://p3-prediction-app.herokuapp.com/
+'''
+
 import requests
+
 
 data = {
     "age": 30,
@@ -14,7 +19,7 @@ data = {
     "nativeCountry": "United-States"
 }
 
-r = requests.post('https://wku-test-app.herokuapp.com/prediction',
+r = requests.post('https://p3-prediction-app.herokuapp.com/prediction',
                   json=data)
 
 assert r.status_code == 200
