@@ -99,7 +99,7 @@ def save_models(trained_model, encoder, lb, path="../model"):
     dump(lb,f"{path}/lb.joblib")
 
 
-def load_models(path="../model"):
+def load_models(path="model"):
     """
     Load the trained model, encoder and LabelBinarizer stored in the specified path.
 
