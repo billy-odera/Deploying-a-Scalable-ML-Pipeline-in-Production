@@ -14,7 +14,7 @@ cat_features = [
 ]
 
 # Optional: implement hyperparameter tuning.
-def train_model(X_train, y_train):
+def train_model(X_train, y_train, n_estimators=100):
     """
     Trains a machine learning model and returns it.
 
@@ -30,7 +30,7 @@ def train_model(X_train, y_train):
         Trained machine learning model.
     """
 
-    GBClassifier = GradientBoostingClassifier(n_estimators=100)
+    GBClassifier = GradientBoostingClassifier(n_estimators)
     GBClassifier.fit(X_train, y_train)
 
     return GBClassifier
